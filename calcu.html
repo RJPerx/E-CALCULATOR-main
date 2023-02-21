@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="calculator">
+                  <div class="calculator-screen">
+                    <div class="previous-operand" data-previous-operand></div>
+                    <div class="current-operand" data-current-operand></div>
+                  </div>
+                  <div class="calculator-keys">
+                    <button class="operator btn btn-danger" data-all-clear>AC</button>
+                    <button class="operator btn btn-warning" data-delete>C</button>
+                    <button class="operator btn btn-secondary" data-operation>÷</button>
+                    <button class="number btn btn-light" data-number>7</button>
+                    <button class="number btn btn-light" data-number>8</button>
+                    <button class="number btn btn-light" data-number>9</button>
+                    <button class="operator btn btn-secondary" data-operation>*</button>
+                    <button class="number btn btn-light" data-number>4</button>
+                    <button class="number btn btn-light" data-number>5</button>
+                    <button class="number btn btn-light" data-number>6</button>
+                    <button class="operator btn btn-secondary" data-operation>-</button>
+                    <button class="number btn btn-light" data-number>1</button>
+                    <button class="number btn btn-light" data-number>2</button>
+                    <button class="number btn btn-light" data-number>3</button>
+                    <button class="operator btn btn-secondary" data-operation>+</button>
+                    <button class="number btn btn-light" data-number>0</button>
+                    <button class="number btn btn-light" data-number>.</button>
+                    <button class="operator btn btn-success" data-equals>=</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+      
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="./scripts.js"></script>
+
+</body>
+</html>

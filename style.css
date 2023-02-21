@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  background-color: #f5f5f5;
+}
+
+.calculator {
+  margin: auto;
+  padding: 20px;
+  max-width: 320px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.calculator-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.calculator-screen label {
+  font-size: 1.5em;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  width: 100%;
+  text-align: right;
+  border-radius: 5px;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.calculator-keys button {
+  font-size: 1.5em;
+  padding: 10px;
+  background-color: #2196F3; /* blue color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.calculator-keys button:hover {
+  background-color: #1976D2; /* darker shade of blue */
+}
+
+.calculator-keys button:active {
+  background-color: #0D47A1; /* even darker shade of blue */
+}
+
+.calculator-keys button.operator {
+  background-color: #BBDEFB; /* light blue color */
+}
+
+.calculator-keys button.operator:hover {
+  background-color: #90CAF9; /* darker shade of light blue */
+}
+
+.calculator-keys button.operator:active {
+  background-color: #64B5F6; /* even darker shade of light blue */
+}
+
+.calculator-keys button.ac {
+  background-color: #F44336; /* red color */
+  color: #fff;
+}
+
+.calculator-keys button.ac:hover {
+  background-color: #D32F2F; /* darker shade of red */
+}
+
+.calculator-keys button.c {
+  background-color: #9E9E9E; /* grey color */
+}
+
+.calculator-keys button.c:hover {
+  background-color: #616161; /* darker shade of grey */
+}
+
+.calculator-keys button.equal {
+  background-color: #4CAF50; /* green color */
+}
+
+.calculator-keys button.equal:hover {
+  background-color: #388E3C; /* darker shade of green */
+}
+
+.calculator-keys button.dot {
+  font-size: 2em;
+  text-align: center;
+  background-color: #FFC107; /* yellow color */
+}
+
+.calculator-keys button.dot:hover {
+  background-color: #FFA000; /* darker shade of yellow */
+}
+
+@media screen and (max-width: 480px) {
+  .calculator {
+    max-width: 100%;
+  }
+}
